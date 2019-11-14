@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+@import '~antd/dist/antd.css';
+@import './assets/css/animate.css';
+.ant-menu li a{
+  color: #fff !important;
+}
+.avatar img{
+  width: 30px;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

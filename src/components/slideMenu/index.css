@@ -1,0 +1,5 @@
+li.ant-menu-item>div, .ant-menu-submenu-title>div {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
