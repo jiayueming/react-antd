@@ -16,13 +16,13 @@ const From = () => <h3>From</h3>
 export const menus = [    // 菜单相关路由
     { path: '/index/UI', name: 'UI', icon:'mail', component: Ui , 
         routes: [
-            {path: '/index/UI/button', name: '按钮', icon: 'video-camera', component: Button },
-            {path: '/index/UI/users', name: '用户列表', icon: 'video-camera', component: User },
+            {path: '/index/UI/button', name: '按钮', icon: 'calendar', component: Button },
+            {path: '/index/UI/users', name: '用户列表', icon: 'wallet', component: User },
             {path: '/index/UI/Icon', name: '图标', icon: 'video-camera', component: Icon }
         ]
     },
     { path: '/index/animation', name: '动画', icon: 'appstore', component: Animation },
-    { path: '/index/form', name: '表格', icon: 'video-camera', component: From },
+    { path: '/index/form', name: '表格', icon: 'setting', component: From },
 ]
 export const main = [
     { path: '/login', exact: true, name: '登录', component: Login, meta: {isAuth: true}},

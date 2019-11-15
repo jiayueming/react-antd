@@ -11,7 +11,8 @@ const defaultState = fromJS({
 export default (state = defaultState, action) => {
 	switch(action.type) {
 		case constants.SLIDECOLLAPSED:
-			return state.set('slidecollapsed', !state.slidecollapsed);
+			console.log('yyy', !state.toObject().slidecollapsed)
+			return state.set('slidecollapsed', !state.toObject().slidecollapsed);
 		case constants.ROUTERCONFIG:
             console.log('3', myRouterConfig)
 			return state.set('routerConfig', fromJS({routerConfig: myRouterConfig}));

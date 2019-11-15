@@ -28,7 +28,8 @@ class MyHeader extends Component {
         };
     }
     toggle = () => {
-        this.state.onSlidecollapsed()
+        // this.state.onSlidecollapsed()
+        this.props.onSlidecollapsed()
     }
     handleClick = (e) => {
         console.log('click ', e);

@@ -7,7 +7,6 @@ import './index.css'
 
 class Index extends Component {
     render() {
-        console.log('55')
         let { routes } = this.props
         return (
             <Layout style={{flexDirection: 'inherit', minHeight: '100vh'}}>

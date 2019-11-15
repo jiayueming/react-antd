@@ -36,8 +36,10 @@ export const OldSchoolMenuLink = ({ route }) => (
         children={({ match }) => {
             return (
                 <div className={match ? "active" : ""}>
-                    <Icon type={route.icon}/>
-                    <Link to={route.path}>{route.name}</Link>
+                    <Link to={route.path}>
+                        <Icon type={route.icon}/>
+                        {route.name}
+                    </Link>
                 </div>
             )
         }}
