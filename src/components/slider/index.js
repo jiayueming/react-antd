@@ -33,7 +33,6 @@ class MySlider extends Component {
     render() {
         let { slidecollapsed, getRouterConfig } = this.props
         slidecollapsed =  filterData(slidecollapsed, 'slidecollapsed')
-        console.log('header', slidecollapsed)
         const style = {
             position: 'relative',
             paddingTop: '60px',

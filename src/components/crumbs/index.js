@@ -20,14 +20,15 @@ class Crumbs extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            pathSnippets: ''
+            pathSnippets: '',
+            routerConfig: []
         }
     }
     componentWillMount () {
         this.props.getRouterConfig()
     }
     shouldComponentUpdate(nextProps, nextState) {
-        if (nextProps.routerConfig) {
+        if (nextProps.routerConfig !== this.props.routerConfig) {
             return true
         }
     }
